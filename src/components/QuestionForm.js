@@ -49,13 +49,18 @@ class QuestionForm extends Component {
 
   render() {
     return (
-      <form  className="quesion-form" onSubmit={ this.handleSubmit }>
-        <input
-          type='text'
-          placeholder='Enter question title'
-          className="questionFormQuestionTitle"
-          value={ this.state.questionTitle }
-          onChange={ this.handleQuestionTitleChange } />
+      <form  className="question-form" onSubmit={ this.handleSubmit }>
+          <span className='input-question-title input input--isao'>
+            <input
+              id='question-title'
+              type='text'
+              className='input__field input__field--isao'
+              value={ this.state.questionTitle }
+              onChange={ this.handleQuestionTitleChange }/>
+            <label className='input__label input__label--isao' htmlFor='question-title' data-content='Question title'>
+                <span className='input__label-content input__label-content--isao'>Enter question title</span>
+            </label>
+          </span>
           <div className="select">
             <span className="arr"></span>
             <select id='correct' onChange={ this.handleCorrectChange }>
@@ -66,34 +71,58 @@ class QuestionForm extends Component {
             </select>
           </div>
           <div>
-          <input
-            type='text'
-            id='optA'
-            placeholder='Enter option A'
-            className="questionFormText"
-            value={ this.state.optionA }
-            onChange={ this.handleOptionChange } />
-          <input
-              type='text'
-              id='optB'
-              placeholder='Enter option B'
-              className="questionFormText"
-              value={ this.state.optionB }
-              onChange={ this.handleOptionChange } />
-          <input
-              type='text'
-              id='optC'
-              placeholder='Enter option C'
-              className="questionFormText"
-              value={ this.state.optionC }
-              onChange={ this.handleOptionChange } />
-          <input
-              type='text'
-              id='optD'
-              placeholder='Enter option D'
-              className="questionFormText"
-              value={ this.state.optionD }
-              onChange={ this.handleOptionChange } />
+              <div>
+              <span className='question-option input input--isao'>
+                <input
+                  id='optA'
+                  type='text'
+                  className='input__field input__field--isao'
+                  value={ this.state.optionA }
+                  onChange={ this.handleOptionChange }/>
+                <label className='input__label input__label--isao' htmlFor='optA' data-content='Option A'>
+                    <span className='input__label-content input__label-content--isao'>Enter Option A</span>
+                </label>
+              </span>
+              </div>
+              <div>
+              <span className='question-option input input--isao'>
+                <input
+                  id='optB'
+                  type='text'
+                  className='input__field input__field--isao'
+                  value={ this.state.optionB }
+                  onChange={ this.handleOptionChange }/>
+                <label className='input__label input__label--isao' htmlFor='optB' data-content='Option B'>
+                    <span className='input__label-content input__label-content--isao'>Enter Option B</span>
+                </label>
+              </span>
+              </div>
+              <div>
+              <span className='question-option input input--isao'>
+                <input
+                  id='optC'
+                  type='text'
+                  className='input__field input__field--isao'
+                  value={ this.state.optionC }
+                  onChange={ this.handleOptionChange }/>
+                <label className='input__label input__label--isao' htmlFor='optC' data-content='Option C'>
+                    <span className='input__label-content input__label-content--isao'>Enter Option C</span>
+                </label>
+              </span>
+              </div>
+              <div>
+              <span className='question-option input input--isao'>
+                <input
+                  id='optD'
+                  type='text'
+                  className='input__field input__field--isao'
+                  value={ this.state.optionD }
+                  onChange={ this.handleOptionChange }/>
+                <label className='input__label input__label--isao' htmlFor='optD' data-content='Option D'>
+                    <span className='input__label-content input__label-content--isao'>Enter Option D</span>
+                </label>
+              </span>
+              </div>
             </div>
             <input
               type='submit'
