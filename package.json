@@ -1,0 +1,49 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "A React application to showcase rendering with Universal JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run build && babel-node src/server.js",
+    "start:dev": "export NODE_ENV=development && npm run build:dev && nodemon --exec babel-node -- src/server.js",
+    "start:universal": "export UNIVERSAL=true && npm run start",
+    "start:dev:universal": "export NODE_ENV=development && export UNIVERSAL=true && npm run start:dev",
+    "build": "NODE_ENV=production webpack -p",
+    "build:dev": "webpack -d",
+    "build:dev:watch": "webpack -d --watch"
+  },
+  "author": "Sarunas Jonys",
+  "license": "SJ",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.2",
+    "express": "^5.0.0-alpha.5",
+    "foreman": "^2.0.0",
+    "jquery": "^3.2.1",
+    "marked": "^0.3.6",
+    "mongoose": "^4.9.8",
+    "mongoose-random": "^0.1.1",
+    "mongoose-simple-random": "^0.4.1",
+    "nodemon": "^1.11.0",
+    "query-string": "^4.3.4",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-router-dom": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.4.1",
+    "babel-register": "^6.18.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "nodemon": "^1.11.0",
+    "webpack": "2.2.1"
+  }
+}
