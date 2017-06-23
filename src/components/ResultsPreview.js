@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import LoadingComponent from './LoadingComponent';
-import { sectionOfQuestionsSize } from './config';
+import { sectionOfQuestionsSize } from '../../config';
 import AdminMenuBar from './AdminMenuBar';
 
 class ResultsPreview extends Component {
