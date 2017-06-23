@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Question from './Question';
 import AdminMenuBar from './AdminMenuBar';
-import { sectionOfQuestionsSize } from './config';
+import { sectionOfQuestionsSize } from '../../config';
 
 class QuestionList extends Component {
   constructor(props) {
