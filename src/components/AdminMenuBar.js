@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { sectionOfQuestionsSize } from './config';
+import { sectionOfQuestionsSize } from '../../config';
 
 class AdminMenuBar extends Component {
   render() {
