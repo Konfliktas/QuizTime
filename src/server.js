@@ -7,7 +7,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { App } from './components/App';
 import { StaticRouter as Router } from 'react-router-dom';
-import { quizSize } from '.././config';
+import { quizSize } from '.././quizConfig';
 import express from 'express';
 import Question from './model/questions';
 import SolvedQuiz from './model/solvedQuizes';
