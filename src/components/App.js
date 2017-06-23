@@ -5,7 +5,7 @@ import IndexPage from './IndexPage';
 import NotFoundPage from './NotFoundPage';
 import QuizEntry from './QuizEntry';
 import AdminEntry from './AdminEntry';
-import { solvedByUserUrl } from '../../config';
+import { solvedByUserUrl } from '../../quizConfig';
 
 const renderIndex = () => <IndexPage />;
 const renderQuizEntry = () => <QuizEntry urlSolvedByUser={ solvedByUserUrl }/>;
