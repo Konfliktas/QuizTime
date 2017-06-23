@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import { browserHistory } from 'react-router';
 import QuizHighLevel from './QuizHighLevel';
-import { quizSize, quizUrl, solvedQuizesUrl, questionsUrl, solvedByUserUrl } from './config';
+import { quizSize, quizUrl, solvedQuizesUrl, questionsUrl, solvedByUserUrl } from '../../config';
 import Cookies from 'universal-cookie';
 
 
