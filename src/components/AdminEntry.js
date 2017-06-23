@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import { questionsUrl, adminName, solvedQuizesUrl } from './config';
+import { questionsUrl, adminName, solvedQuizesUrl } from '../../config';
 import QuestionBox from './QuestionBox';
 
 class AdminEntry extends Component {
