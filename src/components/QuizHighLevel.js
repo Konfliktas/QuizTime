@@ -5,7 +5,7 @@ import Timer from './Timer';
 import update from 'react-addons-update';
 import Result from './Result';
 import LoadingComponent from './LoadingComponent';
-import { quizSize, quizUrl, solvedQuizesUrl, questionsUrl, solvedByUserUrl } from './config';
+import { quizSize, quizUrl, solvedQuizesUrl, questionsUrl, solvedByUserUrl } from '../../config';
 import Cookies from 'universal-cookie';
 import { quizTimer } from './config';
 
