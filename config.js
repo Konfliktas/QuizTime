@@ -5,7 +5,7 @@ const quizSize = 10;
 //Number of questions each Admin Page Section consists of
 const sectionOfQuestionsSize = 4;
 //Period of seconds to solve the quiz
-const quizTimer = 60;
+const quizTimer = 100;
 //Api to get random set of questions for Quiz
 const quizUrl = '/api/quiz';
 //Api to get/post solved Quizes
